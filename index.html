@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Rain Bird</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="relative border-b bg-[#00823C]">
+        <div class="max-w-[1400px] mx-auto px-5">
+            <div class="flex items-center justify-between h-25">
+
+                <!-- Logo -->
+                <a href="/" class="text-2xl font-bold">
+                    <img src="https://www.rainbird.com/sites/default/files/RainBirdLogo_330x100.png" class="h-25"
+                        alt="">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="max-lg:hidden">
+                    <ul class="flex items-end">
+                        <li><a href="#" class="hover:underline">ABOUT US</a></li>
+                        <li><a href="#" class="hover:underline">NEWS</a></li>
+                        <li><a href="#" class="hover:underline">CAREERS</a></li>
+                        <li><a href="#" class="hover:underline">LEARNING</a></li>
+                        <li><a href="#" class="hover:underline">SHOP RAIN BIRD</a></li>
+                        <li><a href="#" class="hover:underline">CONTACT</a></li>
+                        <li><a href="#" class="hover:underline">WHERE TO BUY</a></li>
+                    </ul>
+                </nav>
+
+                <button id="menuBtn" class="hidden max-lg:flex flex-col gap-1.5">
+                    <span class="w-8 h-[3px] bg-white"></span>
+                    <span class="w-8 h-[3px] bg-white"></span>
+                    <span class="w-8 h-[3px] bg-white"></span>
+                </button>
+
+                <div id="mobileMenu" class="absolute top-full left-0 w-full bg-[#003719] text-white
+         max-h-0 overflow-hidden opacity-0
+         transition-all duration-500 ease-in-out lg:hidden z-50">
+                    <ul class="flex flex-col text-lg font-bold">
+                        <li><a class="block p-4" href="#">ABOUT US</a></li>
+                        <li><a class="block p-4" href="#">NEWS</a></li>
+                        <li><a class="block p-4" href="#">CAREERS</a></li>
+                        <li><a class="block p-4" href="#">LEARNING</a></li>
+                        <li><a class="block p-4" href="#">SHOP RAIN BIRD</a></li>
+                        <li><a class="block p-4" href="#">CONTACT</a></li>
+                        <li><a class="block p-4" href="#">WHERE TO BUY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1400px] mx-auto mb-4">
+        <section>
+            <div class="swiper md:h-[550px]">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div
+                        class="swiper-slide md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2022-06/rainbird-1400x550treestories.jpg?itok=ngyPfjz2')] bg-cover md:h-[550px]">
+                        <img class="md:hidden" src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2024-05/rain-bird-tree-stories-mobile.jpg?itok=WxcUXwCS" alt="">
+                        <div class="md:h-full md:w-[80%] max-md:py-16 max-md:px-6  max-md:bg-[#158a5c] mx-auto flex justify-center md:items-start flex-col">
+                            <div class="text-center">
+                                <p class="text-[25px] mb-2">
+                                    <span class="mb-4">
+                                        Watch the new docuseries,
+                                    </span> <br>
+                                    <span class="text-[30px] font-bold">TREE STORIES</span> <br>
+                                    <span class="italic">
+                                        With Elliot Bambrough, <br>
+                                        The Tree Narrator
+                                    </span>
+                                </p>
+                                <button class="border border-white border-3 font-semibold bg-[#00823C] rounded-lg p-3">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2024-05/champions-are-grown-with-rain-bird_0.jpg?itok=dKjo8tyb')] bg-cover md:h-[550px] md:flex items-center justify-start">
+                        <img class="md:hidden" src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2023-08/r490-075127-3_2023champsrgrownwebmarquee_mobile_850x850.jpg?itok=BqAsMfIW" alt="">
+                        <div class="md:w-1/3 w-full p-8 text-center md:ml-12 max-md:bg-black">
+                            <h4 class="lg:text-[36px] text-[30px] font-bold ">Champions are Grown</h4>
+                            <p class="lg:text-[24px] text-xl mb-4">Rain Bird is honoring sports turf professionals, sharing their stories and giving you a behind-the-scenes look at venues including Maracanã Stadium, Melbourne Cricket Ground and more.</p>
+                            <button
+                                class="border border-white border-3 text-lg font-semibold bg-[#00823C] rounded-lg p-3">WATCH
+                                STORIES
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2024-05/rain-bird-golf-course-irrigation-maintenance_0.jpg?itok=lnYyU5fT')] bg-cover md:h-[550px] md:flex items-center justify-end">
+                        <img class="md:hidden" src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2023-12/rainbird-550x550thedrop.png?itok=oCWrslDc" alt="">
+                        <div class="md:w-1/3 w-full bg-[#000000B3] p-8 text-center mr-12">
+                            <h4 class="text-[36px] text-[#00823C] font-bold ">the drop</h4>
+                            <p class="text-[24px] mb-4">Go behind the scenes with top turf
+                                pros to see what it takes to create
+                                and maintain the world's most
+                                breathtaking golf courses
+                            </p>
+                            <button
+                                class="border border-white border-3 text-lg font-semibold bg-[#00823C] rounded-lg p-3">READ
+                                STORIES</button>
+                        </div>
+                    </div>
+                    ...
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev max-md:hidden"></div>
+                <div class="swiper-button-next max-md:hidden"></div>
+            </div>
+        </section>
+
+        <section class="max-w-[1400px] mx-auto max-lg:px-4">
+            <ul
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4 my-8 text-[23px]">
+                <li class="bg-[#00823c] border border-gray-400 rounded-none min-w-[190px] text-center">
+                    <a href="homeowners" class="block p-3 text-white">
+                        Homeowners
+                    </a>
+                </li>
+
+                <li class="bg-[#00823c] border border-gray-400 rounded-none min-w-[190px] text-center">
+                    <a href="professionals" class="block p-3 text-white">
+                        Professionals
+                    </a>
+                </li>
+
+                <li class="bg-[#00823c] border border-gray-400 rounded-none min-w-[190px] text-center">
+                    <a href="golf" class="block p-3 text-white">
+                        Golf
+                    </a>
+                </li>
+
+                <li class="bg-[#00823c] border border-gray-400 rounded-none min-w-[190px] text-center">
+                    <a href="agriculture" class="block p-3 text-white">
+                        Agriculture
+                    </a>
+                </li>
+
+                <li class="bg-[#00823c] border border-gray-400 rounded-none min-w-[190px] text-center">
+                    <a href="learning" class="block p-3 text-white">
+                        Learning
+                    </a>
+                </li>
+
+                <li class="bg-[#00823c] border border-gray-400 rounded-none min-w-[190px] text-center">
+                    <a href="service" class="block p-3 text-white">
+                        Service
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div
+                class="md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2024-04/higher_standard_6.jpg?itok=tVUC-hBV')] bg-cover bg-center md:h-[562px] md:flex justify-around items-center w-full max-w-[1400px]">
+                <div></div>
+                <div>
+                    <img class="md:hidden"
+                        src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2024-04/higher_standard_-_small.jpg?itok=ODMPnY4Q"
+                        alt="">
+                </div>
+                <div class="md:w-1/3 text-center max-md:bg-black max-md:p-7">
+                    <h2 class="text-[25px] mb-2">A Higher Standard From the Ground Up</h2>
+                    <p class="text-sm mx-6 mb-4">Commercial projects demand more from an irrigation system. See how Rain
+                        Bird puts every component to the test and backs it up with world-class professional support to
+                        exceed every expectation.</p>
+                    <div class="flex max-md:flex-col gap-4 justify-center items-center">
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">Discover Solutions</a>
+                        </div>
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">IQ4 Central Control</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2024-04/store_3.jpg?itok=_yYjZdUi')] bg-[#828282] bg-cover bg-center md:h-[550px] md:flex justify-around items-center">
+                <img class="md:hidden"
+                    src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2024-04/store_-_small.jpg?itok=GhDpEQmw"
+                    alt="">
+                <div class="md:w-1/3 text-center max-md:p-7">
+                    <h2 class="text-[25px] mb-2">Rain Bird Products Shipped to Your Home or Business</h2>
+                    <p class="text-sm mx-6 mb-4">Visit the Rain Bird Online Store anytime day or night for a wide
+                        selection of genuine Rain Bird products and replacement parts, delivered right to your door.</p>
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-y-4 gap-x-8">
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">Shop Timers</a>
+                        </div>
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">Spanish Support</a>
+                        </div>
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">Design With Us</a>
+                        </div>
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">Bundles And Kits</a>
+                        </div>
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">Shop Sprinkles</a>
+                        </div>
+                        <div class="border border-white px-7 rounded-3xl py-2.5">
+                            <a href="">Drip Irrgation</a>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div
+                class="md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2024-04/contractor-hero.jpg?itok=qtZj9OvK')] bg-[#2f1700] bg-cover bg-center md:h-[550px] md:flex justify-around items-center">
+                <div></div>
+                <div></div>
+                <img class="md:hidden"
+                    src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2024-04/contractor_-_small.jpg?itok=hQhELc0I"
+                    alt="">
+                <div
+                    class="md:w-1/3 w-3/4 max-md:mx-auto max-md:p-8 max-md:py-16 flex flex-col items-center text-center">
+                    <h2 class="text-[25px] mb-2">Free Referrals to Professional Contractors</h2>
+                    <p class="text-sm mx-6 mb-4">Let Rain Bird help you with a FREE referral to top local contractors
+                        near you who can help select and install the best sprinkler system for your yard.
+                        Just enter your zip code and get a list of pre-screened professionals in your area.</p>
+                    <div class="border border-white max-w-[250px] px-7 rounded-3xl py-2.5">
+                        <a href="">Find a Contractor</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2024-04/training.jpg?itok=HWfOqgK-')] bg-[#006400] bg-cover bg-center md:h-[550px] md:flex justify-around items-center">
+                <img class="md:hidden"
+                    src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2024-04/training_-_small.jpg?itok=etg6zbkA"
+                    alt="">
+                <div class="md:w-1/3 w-4/5 max-md:p-7 max-md:py-16 flex flex-col items-center text-center">
+                    <h2 class="text-[25px] mb-2">Professional Irrigation Training</h2>
+                    <p class="text-sm mx-6 mb-4">Work Smarter, not harder. Rain Bird Services and Rain Bird Corporation
+                        offer the most complete product and technical training solution in the irrigation industry
+                        today.</p>
+                    <div class="border border-white max-w-[250px] px-7 rounded-3xl py-2.5">
+                        <a href="">Rain Bird Learning</a>
+                    </div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div
+                class="md:bg-[url('https://www.rainbird.com/sites/default/files/styles/scaled_1400x1400/public/media/images/2024-04/rain_bird_news.jpg?itok=3w_TyDEJ')] bg-[#005900] bg-cover bg-center md:h-[550px] md:flex justify-around items-center">
+                <div></div>
+                <div></div>
+                <img class="md:hidden"
+                    src="https://www.rainbird.com/sites/default/files/styles/scale_crop_850x850/public/media/images/2024-04/rain_bird_news_-_small.jpg?itok=w8053At-"
+                    alt="">
+                <div class="md:w-1/3 max-md:py-16  flex flex-col items-center text-center">
+                    <h2 class="text-[25px] mb-2">Rain Bird News</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="max-w-[1320px] mx-auto px-6 ">
+        <div class="grid lg:grid-cols-3 grid-cols-1 py-5 border-b">
+            <div class="px-3 col-span-1">
+                <img src="https://progress-garden.az/assets/img/logo/progress_new_logo.png" class="w-[150px] mb-5"
+                    alt="">
+                <p class="mb-5 !text-[#404A3D]">Məqsədimiz müştərilərimizə keyfiyyətli bağ,
+                    meşə və kənd təsərrüfatı texnikaları,
+                    həmçinin suvarma sistemlərinin satışı
+                    və quraşdırılmasını əlçatan qiymətə və
+                    keyfiyyətli şəkildə həyata keçirməkdir.
+                </p>
+                <div class="flex gap-4 text-[#5b8c51]">
+                    <div class="bg-[#f8f7f0] w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-500">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="bg-[#f8f7f0] w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-500">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="bg-[#f8f7f0] w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-500">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div class="bg-[#f8f7f0] w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-500">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2 my-6 md:flex justify-between">
+                <div class="max-md:px-3">
+                    <h4 class="!text-[#404A3D] text-xl mb-3 font-bold">Şirkət</h4>
+                    <ul class="!text-[#666] text-sm flex flex-col gap-2">
+                        <li><a href="">Haqqımızda</a></li>
+                        <li><a href="">Xidmətlər</a></li>
+                        <li><a href="">Yeniliklər</a></li>
+                        <li><a href="">Məhsullar</a></li>
+                    </ul>
+                </div>
+                <div class="max-md:px-3 max-md:py-4">
+                    <h4 class="!text-[#404A3D] text-xl mb-3 font-bold">İş saatı</h4>
+                    <ul class="!text-[#666] text-sm flex flex-col gap-2">
+                        <li><i class="fa-regular fa-clock mr-2 text-[#5b8c51]"></i> 09:00-18:00 (B.e-Şənbə)</li>
+                        <li><i class="fa-solid fa-envelope mr-2 text-[#5b8c51]"></i>sales@progress-garden.az</li>
+                        <li><i class="fa-solid fa-phone mr-2 text-[#5b8c51]"></i>+994 70 326 07 14</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 max-md:px-3">
+                    <h4 class="!text-[#404A3D] text-xl mb-3 font-bold">Ünvan</h4>
+                    <div class="!text-[#666] flex items-center">
+                        <i class="fa-solid fa-location-dot mr-2 text-[#5b8c51]"></i>
+                        <p>Ziya bünyadov pr 298 Dərnəgül yolu (köhnə foto servis)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex max-lg:flex-col justify-between py-[30px]">
+            <div class="!text-[#5b8c51]">
+                &#169; 2026 <span class="text-[#404a3d] font-bold underline">Progress Garden</span>
+            </div>
+            <div>
+                <img src="https://progress-garden.az/assets/img/okmedialogo.webp" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/76374eef7a.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
