@@ -62,6 +62,10 @@ body {
 header ul li {
     padding: 14.725px;
     font-size: 0.97em;
+    white-space: nowrap;
+}
+header ul li:hover{
+    text-decoration: underline;
 }
 
 
@@ -71,11 +75,11 @@ footer {
 }
 
 @media (min-width: 768px) {
-    header ul li:nth-child(4) {
+    #learning {
         padding: 15.5px 46.5px 15.5px 23.25px;
     }
 
-    header ul li:nth-child(5) {
+    #careers {
         padding: 15.5px 23.25px;
     }
 }
